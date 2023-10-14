@@ -16,6 +16,8 @@ ehthumbs_vista.db
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+# Random resources folder
+resources/
 
 # Windows Installer files
 *.cab
