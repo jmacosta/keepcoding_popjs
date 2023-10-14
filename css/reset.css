@@ -2,7 +2,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Young+Serif&display=swap');
+
 html,
 body,
 div,
@@ -136,4 +138,8 @@ body {
   max-width: 1440px;
   margin: auto;
   height: 100vh;
+}
+h1,
+h2 {
+  font-family: 'Young Serif', serif;
 }
