@@ -30,6 +30,7 @@ header {
   font-size: larger;
   color: var(--primary-color);
   cursor: pointer;
+  transition-duration: 0.4s;
 }
 .header_login input:hover {
   background-color: var(--primary-color);
