@@ -138,6 +138,8 @@ body {
   max-width: 1440px;
   margin: auto;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1,
 h2 {
