@@ -75,13 +75,12 @@ main {
 }
 .card .text-content {
   display: flex;
-  padding: 10px;
-  padding-right: 50px;
+  padding: 1vh 5vw 1vh 2vw;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   flex: 1 0 0;
-  row-gap: 5px;
+  row-gap: 0.5vh;
 }
 .card .text-content .product_name {
   color: #000;
@@ -93,7 +92,7 @@ main {
   text-transform: uppercase;
 }
 .card .text-content .product_description {
-  height: 200px;
+  max-height: 20vh;
   overflow: hidden;
   color: #000;
   font-family: Roboto;
@@ -103,7 +102,7 @@ main {
   line-height: normal;
   text-align: left;
   text-overflow: ellipsis;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 .card .text-content .product_price {
   color: var(--primary-color);
@@ -117,14 +116,19 @@ main {
   justify-self: baseline;
   align-self: end;
 }
-figure .sell_or_search {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 15px;
+.sell_or_search {
   background-color: var(--primary-color);
   border-radius: 100px;
-  padding: 5px 10px 5px 10px;
+  padding: 1vh 2vw 1vh 2vw;
+  display: flex;
+  align-items: center;
+}
+.sell_or_search span {
+  color: #fff;
+}
+.sell_or_search img {
+  width: 25px;
+  padding-right: 0.5vw;
 }
 .footer_card {
   background-color: var(--primary-color);
@@ -138,19 +142,14 @@ figure .sell_or_search {
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 button {
-  height: 5vh;
   background-color: white;
   border: solid var(--primary-color) 2px;
-  border-radius: 20px;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5 vh;
+  border-radius: 100px;
+  padding: 1vh 2vw 1vh 2vw;
   font-weight: 400;
   font-size: larger;
   color: var(--primary-color);
   cursor: pointer;
-  width: 10vw;
   transition-duration: 0.4s;
 }
 .delete_product:hover {
