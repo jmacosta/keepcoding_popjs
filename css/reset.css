@@ -132,6 +132,8 @@ table {
 
 :root {
   --primary-color: #13c1ac;
+  --primary-color-hover: #0e8376;
+  --primary-color-RGB: 19, 193, 172;
   font-family: 'Roboto', sans-serif;
 }
 body {
