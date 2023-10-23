@@ -70,10 +70,11 @@ h2 {
 }
 
 .card {
-  max-width: 240px;
+  max-width: 300px;
   height: 400px;
-  display: block;
-  background-color: brown;
+  display: grid;
+  flex-direction: column;
+
   border-radius: 5px;
   border: 0.25px solid #cacaca;
   background: #fff;
@@ -81,9 +82,17 @@ h2 {
   position: relative;
 }
 
-.card figure img {
+.card figure {
+  height: 220px;
+  padding-top: 2vh;
+}
+.product_image {
+  display: flex;
+  object-fit: contain;
+  height: 200px;
+}
+img {
   width: 100%;
-  object-fit: cover;
 }
 .card .text-content {
   display: flex;
@@ -98,7 +107,7 @@ h2 {
 .card .text-content .product_name {
   color: #000;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
