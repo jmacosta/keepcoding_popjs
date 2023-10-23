@@ -63,7 +63,7 @@
   font-weight: 500;
 }
 
-#button {
+#submitButton {
   position: relative;
   width: 100%;
   border: 2px solid var(--primary-color);
@@ -79,7 +79,7 @@
   overflow: hidden;
 }
 
-#button::after {
+#submitButton::after {
   content: '';
   position: absolute;
   background-color: rgba(255, 255, 255, 0.253);
@@ -93,7 +93,7 @@
   transition-duration: 0.5s;
 }
 
-#button:hover::after {
+#submitButton:hover::after {
   transform: translateX(600px);
   transition-duration: 0.5s;
 }
@@ -117,7 +117,7 @@
   color: black;
 }
 
-.signupContainer a {
+.signupContainer button {
   font-size: 0.7em;
   font-weight: 500;
   background-color: #2e2e2e;
@@ -126,10 +126,12 @@
   padding: 8px 15px;
   border-radius: 20px;
   min-width: none;
+  cursor: pointer;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }

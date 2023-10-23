@@ -2,7 +2,15 @@ import { loginUser } from './loginModel.js';
 export const loginController = loginForm => {
   loginForm.addEventListener('submit', event => {
     event.preventDefault();
-    submitLoginForm(loginForm);
+    if (event.submitter.id === 'registerButton') {
+      window.location = './register.html';
+    }
+    if (event.submitter.id === 'exitButton') {
+      window.location = './index.html';
+    }
+    if (event.submitter.id === 'submitButton') {
+      submitLoginForm(loginForm);
+    }
   });
 };
 
