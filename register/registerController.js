@@ -1,18 +1,23 @@
 import { createUser } from './registerModel.js';
 export const registerController = registerForm => {
   registerForm.addEventListener('submit', event => {
-    validateForm(event, registerForm);
+    event.preventDefault();
+    if (event.submitter.id === 'exitButton') {
+      window.location = './index.html';
+    }
+    if (event.submitter.id === 'submitButton') {
+      validateForm(event, registerForm);
+    }
   });
 };
 
 const validateForm = async (event, registerForm) => {
-  event.preventDefault();
   const dataForm = new FormData(registerForm);
   try {
     if (isFormValid(dataForm)) {
       await createUser(dataForm.get('email'), dataForm.get('password'));
       alert('Usuario creado que te cagas Manolito');
-      //window.location = '../login.html';
+      window.location = './login.html';
     }
   } catch (error) {
     alert(error.message);
