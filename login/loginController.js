@@ -23,7 +23,7 @@ const submitLoginForm = async loginForm => {
     );
     localStorage.setItem('token', jwt);
     window.location = './index.html';
-    alert('estamos dentro baby');
+    alert('estamos dentro, baby');
   } catch (error) {
     console.log(error);
     alert('va a ser q no, login again', error.message);
