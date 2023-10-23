@@ -12,7 +12,7 @@ header {
 .header__logo {
   height: 10vh;
 }
-.header_login input {
+.header_login button {
   height: 5vh;
   background-color: white;
   border: solid var(--primary-color) 2px;
@@ -27,7 +27,7 @@ header {
   cursor: pointer;
   transition-duration: 0.4s;
 }
-.header_login input:hover {
+.header_login button:hover {
   background-color: var(--primary-color);
   border: solid white 2px;
   color: white;
