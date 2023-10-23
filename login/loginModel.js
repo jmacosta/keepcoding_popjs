@@ -19,7 +19,7 @@ export const loginUser = async (email, password) => {
       throw new Error('error de token');
     }
     if (response.ok) {
-      return data.accesToken;
+      return data.accessToken;
     }
   } catch (error) {
     throw new Error('error al logear');
