@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -66,13 +70,14 @@ h2 {
   column-gap: 20px;
   row-gap: 2vh;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin: 0 auto;
 }
 
 .card {
-  max-width: 300px;
+  width: 260px;
   height: 400px;
-  display: grid;
+  display: flex;
   flex-direction: column;
 
   border-radius: 5px;
@@ -80,6 +85,28 @@ h2 {
   background: #fff;
   box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.3);
   position: relative;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.overlay img {
+  width: 15%;
+}
+
+.card:hover .overlay {
+  opacity: 1;
 }
 
 .card figure {
