@@ -1,5 +1,5 @@
 export const autenthicatedView = () => {
-  return ` <button id="logout">Cerrar sesión</button>`;
+  return `<button id="create_product">Nuevo Producto</button> <button id="logout">Cerrar sesión</button>`;
 };
 
 export const unautorizedView = () => {
