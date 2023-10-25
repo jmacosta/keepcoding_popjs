@@ -3,7 +3,7 @@ export const productView = product => {
     ? { image: 'assets/sell.svg', alt: 'sell icon' }
     : { image: 'assets/search.svg', alt: 'search icon' };
   return `
-  <a href="http://localhost:8000/api/products?id=${product.id}">
+  <a href="/product_detail.html?id=${product.id}&_expand=user">
   <div class='card'>
   <figure>
     <div class='sell_or_search'>
