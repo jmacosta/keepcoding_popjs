@@ -22,7 +22,7 @@ export const buildProductDetailCard = product => {
              }" onerror="this.src='assets/no-image.jpg';" alt="${
     sellOrSeachIcon.alt
   }" />
-            <!--<span>${sellOrSeachIcon.text}</span>-->
+            
            </div></section>
   
    

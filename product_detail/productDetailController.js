@@ -1,7 +1,7 @@
 import { getProductDetail } from './productDetailModel.js';
 import { buildProductDetailCard } from './productDetailView.js';
 
-export const productDetailController = productCard => {
-  const product = getProductDetail(4);
+export const productDetailController = async (productCard, productId) => {
+  const product = await getProductDetail(productId);
   productCard.innerHTML = buildProductDetailCard(product);
 };
