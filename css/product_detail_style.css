@@ -48,6 +48,15 @@ body .card:hover {
   align-items: center;
 }
 
+#header_product_detail button:hover {
+  background-color: var(--primary-color);
+  border: solid white 2px;
+  color: white;
+}
+#header_product_detail button:hover svg {
+  fill: #fff;
+}
+
 body .card nav {
   color: #727272;
   text-transform: uppercase;
@@ -58,22 +67,12 @@ body .card nav {
   justify-content: flex-start;
 }
 
-body .card nav svg.heart {
-  height: 24px;
-  width: 24px;
-  float: right;
-  margin-top: -3px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-body .card nav svg.heart:hover {
-  fill: red;
-}
 body .card nav svg.arrow {
   float: left;
   height: 15px;
   width: 15px;
   margin-right: 10px;
+  fill: var(--primary-color);
 }
 body .card .photo {
   padding: 30px;
@@ -144,13 +143,14 @@ body .card .description button.delete_product:hover {
   cursor: pointer;
 }
 .sell_or_search {
-  background-color: brown;
+  background-color: var(--primary-color);
   padding-right: 1rem;
   padding-left: 1rem;
   border-radius: 100px;
-  filter: invert();
+
   margin-right: 2rem;
 }
 .sell_or_search img {
+  filter: invert();
   height: 30px;
 }
