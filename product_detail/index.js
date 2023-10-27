@@ -7,5 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
   sessionController(session);
   const productDetail = document.querySelector('.card');
   productDetailController(productDetail, productID);
-  const goHomeButton = document.querySelector('#go_home');
 });

@@ -35,8 +35,7 @@ export const buildProductDetailCard = product => {
     <h1>${product.price}€</h1>
     <p>${product.description}</p>
     <div id ="authorized_buttons">
-    <button>Modificar</button>
-    <button class="delete_product">Eliminar</button>
+    
     </div>
   </div>
 `;
