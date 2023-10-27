@@ -3,11 +3,10 @@ import { productView } from './productListView.js';
 export const productListController = async productList => {
   const products = await getProducts();
 
-  productList.innerHTML = buildProductList(products);
+  productList.innerHTML = buildProductList(products).join('');
 };
 
-const buildProductList = elements => {
-  return elements.map(element => {
+const buildProductList = elements =>
+  elements.map(element => {
     return productView(element);
   });
-};
