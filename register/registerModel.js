@@ -1,5 +1,6 @@
+import { apiMethods } from '../utils/apiMethods.js';
+
 export const createUser = async (email, password) => {
-  const url = 'http://localhost:8000/auth/register';
   const body = {
     username: email,
     password
@@ -7,13 +8,7 @@ export const createUser = async (email, password) => {
 
   let response;
   try {
-    response = await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(body),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+    apiMethods().addUser('auth/register', null, body);
   } catch (error) {
     if (error.message) {
       throw error.message;
