@@ -1,5 +1,8 @@
+// Apirest service Url
+const SERVERURL = 'http://localhost:8000/';
+
 export const apiMethods = () => {
-  const get = async (endpoint, baseUrl = 'http://localhost:8000/') => {
+  const get = async (endpoint, baseUrl = SERVERURL) => {
     return await fetch(baseUrl + endpoint, {
       method: 'GET',
       headers: {
@@ -7,11 +10,7 @@ export const apiMethods = () => {
       }
     });
   };
-  const addUser = async (
-    endpoint,
-    baseUrl = 'http://localhost:8000/',
-    body
-  ) => {
+  const postUser = async (endpoint, baseUrl = SERVERURL, body) => {
     return await fetch(baseUrl + endpoint, {
       method: 'POST',
       body: JSON.stringify(body),
@@ -20,10 +19,10 @@ export const apiMethods = () => {
       }
     });
   };
-  const addProduct = async (endpoint, baseUrl = 'http://localhost:8000/') => {};
+  const postProduct = async (endpoint, baseUrl = SERVERURL) => {};
   return {
     get,
-    addUser,
-    addProduct
+    postUser,
+    postProduct
   };
 };
