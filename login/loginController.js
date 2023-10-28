@@ -22,10 +22,18 @@ const submitLoginForm = async loginForm => {
       loginData.get('password')
     );
     localStorage.setItem('token', jwt);
-    window.history.back();
+    isPreviousPageRegister()
+      ? (window.location = '/index.html')
+      : window.history.back();
+
     alert('estamos dentro, baby');
   } catch (error) {
     console.log(error);
     alert('va a ser q no, login again', error.message);
   }
+};
+
+const isPreviousPageRegister = () => {
+  // to do function that check previous page to login
+  return false;
 };
