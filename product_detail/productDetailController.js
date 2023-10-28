@@ -8,5 +8,5 @@ export const productDetailController = async (productCard, productId) => {
   productCard.innerHTML = buildProductDetailCard(product);
   goHomeController();
   const authorizedButtons = document.querySelector('#authorized_buttons');
-  authorizedButtonsController(authorizedButtons, product.userId);
+  authorizedButtonsController(authorizedButtons, product.userId, productId);
 };

@@ -16,3 +16,7 @@ export const getProductDetail = async productId => {
     throw new Error('error al extraer');
   }
 };
+
+export const deleteProduct = async productId => {
+  await apiMethods().remove(`api/products/${productId}`);
+};
