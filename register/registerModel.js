@@ -6,9 +6,8 @@ export const createUser = async (email, password) => {
     password
   };
 
-  let response;
   try {
-    apiMethods().addUser('auth/register', null, body);
+    apiMethods().postUser('auth/register', undefined, body);
   } catch (error) {
     if (error.message) {
       throw error.message;
