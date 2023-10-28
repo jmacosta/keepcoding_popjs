@@ -1,21 +1,13 @@
+import { apiMethods } from '../utils/apiMethods.js';
 export const getProducts = async () => {
-  const url = 'http://localhost:8000/api/products/';
-
-  let response;
   try {
-    response = await fetch(url, {
-      method: 'GET',
-
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    const data = await response.json();
+    const response = await apiMethods().get('api/products/');
 
     if (!response.ok) {
       throw new Error('no data');
     }
     if (response.ok) {
+      const data = await response.json();
       return data;
     }
   } catch (error) {
