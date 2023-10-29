@@ -1,6 +1,3 @@
-# keepcoding_popjs
-Practice for the Front JS keepcoding 's module
-
 # My User Registration, Login, and Product Management App
 
 This is a pure JavaScript (Vanilla JS) application that allows users to register, log in, and manage products. It includes the following features:
@@ -16,7 +13,7 @@ This is a pure JavaScript (Vanilla JS) application that allows users to register
 **Backend Repository**: This application relies on a separate backend API. You will need to set up the backend from the "sparest" repository. You can find the backend repository at [https://github.com/kasappeal/sparrest.js](https://github.com/kasappeal/sparrest.js). Follow the instructions provided in the "sparest" repository to set up the backend.
 
 ## Usage Instructions
-
+use db.json with mocked data
 
 
 ### Features
