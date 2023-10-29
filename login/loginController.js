@@ -1,3 +1,4 @@
+import { dispatchEvent } from '../utils/dispatchEvents.js';
 import { loginUser } from './loginModel.js';
 export const loginController = loginForm => {
   loginForm.addEventListener('submit', event => {
@@ -17,10 +18,12 @@ export const loginController = loginForm => {
 const submitLoginForm = async loginForm => {
   const loginData = new FormData(loginForm);
   try {
+    dispatchEvent('startLoginUser', null, loginForm);
     const jwt = await loginUser(
       loginData.get('email'),
       loginData.get('password')
     );
+    dispatchEvent('finishLoginUser', null, loginForm);
     localStorage.setItem('token', jwt);
     isPreviousPageRegister()
       ? (window.location = '/index.html')
