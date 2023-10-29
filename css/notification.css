@@ -1,0 +1,16 @@
+.notification {
+  font-weight: bold;
+  border: solid 1px gray;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 100vh;
+  width: 100%;
+}
+
+.notification.success {
+  background-color: rgb(125, 254, 125);
+}
+
+.notification.error {
+  background-color: rgb(255, 128, 128);
+}
