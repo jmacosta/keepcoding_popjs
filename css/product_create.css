@@ -1,5 +1,4 @@
 .button {
-  appaerance: none;
   font: inherit;
   border: none;
   background: none;
@@ -17,6 +16,7 @@
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  z-index: 10;
 }
 
 .modal {
