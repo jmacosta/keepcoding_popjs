@@ -1,0 +1,547 @@
+{
+  "users": [
+    {
+      "username": "jmab2k@gmail.com",
+      "password": "$2b$10$MSBJ6lPI2sjyqSVVDcpiP.WXq0.8cVQh3ruOwQp4ZiS7yp.nB2bBK",
+      "id": 1
+    },
+    {
+      "username": "jma.dazn@gmail.com",
+      "password": "$2b$10$J6CmcPoBAZo08n7/Lsa6i.6fuxOEFelViAAgVrk328fmbleUA4h4C",
+      "id": 2
+    },
+    {
+      "username": "otro@email.es",
+      "password": "$2b$10$J6CmcPoBAZo08n7/Lsa6i.6fuxOEFelViAAgVrk328fmbleUA4h4C",
+      "id": 3
+    },
+    {
+      "username": "dfsdf@sfsf.es",
+      "password": "$2b$10$J6CmcPoBAZo08n7/Lsa6i.6fuxOEFelViAAgVrk328fmbleUA4h4C",
+      "id": 4
+    },
+    {
+      "username": "achikitraun@email.es",
+      "password": "$2b$10$qKXb7KXVRc/i8mgLzDDb4eCEZFhXTMEetmrh/BmyUussAXPC5PkOy",
+      "id": 5
+    },
+    {
+      "username": "meloinvento@gmail.com",
+      "password": "$2b$10$/9L2ZQ.NL1CJkw6IxxM2ne9qXI2XGIKNjrYfpkq1vLOKblJgXfbKW",
+      "id": 6
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "userId": 4,
+      "name": "Funda de Teléfono Estilo Moderno",
+      "sellOrSearch": true,
+      "price": 25.99,
+      "image": "images/fundatelefono.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Funda de teléfono de estilo moderno para proteger tu dispositivo."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Motor de Automóvil de Alto Rendimiento",
+      "sellOrSearch": false,
+      "price": 4999.99,
+      "image": "images/motoralto.jpg",
+      "tags": [
+        "motor",
+        "work"
+      ],
+      "description": "Motor de alto rendimiento para automóviles."
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "name": "Teléfono Inteligente Avanzado",
+      "sellOrSearch": true,
+      "price": 699.99,
+      "image": "images/telefonoavanzado.jpg",
+      "tags": [
+        "mobile"
+      ],
+      "description": "Teléfono inteligente avanzado con características excepcionales."
+    },
+    {
+      "id": 4,
+      "userId": 5,
+      "name": "Casco de Motocicleta de Carrera",
+      "sellOrSearch": true,
+      "price": 129.99,
+      "image": "images/cascocarrera.jpg",
+      "tags": [
+        "motor"
+      ],
+      "description": "Casco de motocicleta de carreras para máxima seguridad en la pista."
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "name": "Portátil para Trabajo y Productividad",
+      "sellOrSearch": false,
+      "price": 899.99,
+      "image": "images/portatilproductividad.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Portátil de alta calidad para tareas de trabajo y productividad."
+    },
+    {
+      "id": 6,
+      "userId": 4,
+      "name": "Cámara de Fotos Compacta",
+      "sellOrSearch": true,
+      "price": 179.99,
+      "image": "images/camaracompacta.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Cámara compacta para capturar momentos especiales."
+    },
+    {
+      "id": 7,
+      "userId": 1,
+      "name": "Herramientas de Jardín de Alta Calidad",
+      "sellOrSearch": true,
+      "price": 349.99,
+      "image": "images/herramientasjardin.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Herramientas de jardín de alta calidad para el cuidado de tu jardín."
+    },
+    {
+      "id": 8,
+      "userId": 3,
+      "name": "Mochila para Viajes de Aventura",
+      "sellOrSearch": false,
+      "price": 69.99,
+      "image": "images/mochilaaventura.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Mochila resistente para aventuras al aire libre."
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "name": "Scooter Eléctrico Plegable",
+      "sellOrSearch": true,
+      "price": 399.99,
+      "image": "images/scooterplegable.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Scooter eléctrico plegable para moverte con comodidad."
+    },
+    {
+      "id": 10,
+      "userId": 4,
+      "name": "Laptop para Diseño Gráfico",
+      "sellOrSearch": false,
+      "price": 1299.99,
+      "image": "images/laptopdisenio.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Laptop de alto rendimiento para diseñadores gráficos."
+    },
+    {
+      "id": 11,
+      "userId": 3,
+      "name": "Reloj Deportivo Multifuncional",
+      "sellOrSearch": true,
+      "price": 79.99,
+      "image": "images/relojdeportivo.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Reloj deportivo multifuncional para un estilo de vida activo."
+    },
+    {
+      "id": 13,
+      "userId": 4,
+      "name": "Tableta Digitalizadora para Artistas",
+      "sellOrSearch": true,
+      "price": 249.99,
+      "image": "images/tabletaartista.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Tableta digitalizadora para artistas y diseñadores creativos."
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "name": "Zapatillas Deportivas de Última Generación",
+      "sellOrSearch": true,
+      "price": 129.99,
+      "image": "images/zapatillasdeportivas.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Zapatillas deportivas de última generación para un estilo activo."
+    },
+    {
+      "id": 15,
+      "userId": 5,
+      "name": "Bicicleta de Montaña Todo Terreno",
+      "sellOrSearch": false,
+      "price": 499.99,
+      "image": "images/bicicletamontana.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Bicicleta de montaña todo terreno para aventuras al aire libre."
+    },
+    {
+      "id": 16,
+      "userId": 3,
+      "name": "Teclado Mecánico para Gamers",
+      "sellOrSearch": true,
+      "price": 89.99,
+      "image": "images/tecladogamer.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Teclado mecánico diseñado para gamers y entusiastas de la tecnología."
+    },
+    {
+      "id": 17,
+      "userId": 2,
+      "name": "Impresora 3D de Alta Precisión",
+      "sellOrSearch": false,
+      "price": 499.99,
+      "image": "images/impresora3d.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Impresora 3D de alta precisión para proyectos creativos y profesionales."
+    },
+    {
+      "id": 19,
+      "userId": 5,
+      "name": "Gafas de Realidad Virtual",
+      "sellOrSearch": true,
+      "price": 159.99,
+      "image": "images/gafasvr.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Gafas de realidad virtual para una experiencia inmersiva en tus dispositivos móviles."
+    },
+    {
+      "id": 20,
+      "userId": 3,
+      "name": "Herramientas de Electricista Profesional",
+      "sellOrSearch": false,
+      "price": 399.99,
+      "image": "images/herramientaselectricista.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Herramientas de electricista profesional para proyectos eléctricos de alta calidad."
+    },
+    {
+      "id": 21,
+      "userId": 4,
+      "name": "Altavoces Bluetooth Portátiles",
+      "sellOrSearch": true,
+      "price": 49.99,
+      "image": "images/altavocesbluetooth.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Altavoces Bluetooth portátiles para escuchar música en cualquier lugar."
+    },
+    {
+      "id": 22,
+      "userId": 2,
+      "name": "Mesa de Escritorio Ergonómica",
+      "sellOrSearch": false,
+      "price": 129.99,
+      "image": "images/mesaescritorio.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Mesa de escritorio ergonómica para mejorar la comodidad en tu espacio de trabajo."
+    },
+    {
+      "id": 24,
+      "userId": 5,
+      "name": "Silla de Oficina Ergonómica",
+      "sellOrSearch": true,
+      "price": 149.99,
+      "image": "images/sillaoficina.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Silla de oficina ergonómica para mayor comodidad en tu espacio de trabajo."
+    },
+    {
+      "id": 25,
+      "userId": 3,
+      "name": "Cámara de Seguridad para Hogar",
+      "sellOrSearch": true,
+      "price": 79.99,
+      "image": "images/camaraseguridad.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Cámara de seguridad para el hogar para mantener tu hogar seguro."
+    },
+    {
+      "id": 26,
+      "userId": 2,
+      "name": "Disco Duro Externo de Gran Capacidad",
+      "sellOrSearch": false,
+      "price": 89.99,
+      "image": "images/discoduroexterno.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Disco duro externo de gran capacidad para almacenamiento adicional."
+    },
+    {
+      "id": 27,
+      "userId": 4,
+      "name": "Maletín para Portátil de Estilo Profesional",
+      "sellOrSearch": true,
+      "price": 39.99,
+      "image": "images/maletinportatil.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Maletín para portátil de estilo profesional para llevar tus dispositivos con elegancia."
+    },
+    {
+      "id": 28,
+      "userId": 3,
+      "name": "Auriculares Inalámbricos de Alta Calidad",
+      "sellOrSearch": true,
+      "price": 79.99,
+      "image": "images/auricularesinalambricos.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Auriculares inalámbricos de alta calidad para una experiencia auditiva excepcional."
+    },
+    {
+      "id": 29,
+      "userId": 1,
+      "name": "Sartén Antiadherente de Chef",
+      "sellOrSearch": true,
+      "price": 29.99,
+      "image": "images/sartenantiadherente.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Sartén antiadherente de chef para cocinar con facilidad y sin pegar."
+    },
+    {
+      "id": 30,
+      "userId": 5,
+      "name": "Máquina de Ejercicio para Casa",
+      "sellOrSearch": true,
+      "price": 179.99,
+      "image": "images/maquinaejercicio.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Máquina de ejercicio para casa que te ayuda a mantenerte en forma."
+    },
+    {
+      "id": 31,
+      "userId": 2,
+      "name": "Kit de Reparación de Bicicletas",
+      "sellOrSearch": true,
+      "price": 39.99,
+      "image": "images/kitbicicleta.jpg",
+      "tags": [
+        "motor",
+        "lifestyle"
+      ],
+      "description": "Kit de reparación de bicicletas para mantener tu bicicleta en perfecto estado."
+    },
+    {
+      "id": 32,
+      "userId": 3,
+      "name": "Micrófono USB para Grabaciones",
+      "sellOrSearch": true,
+      "price": 49.99,
+      "image": "images/microfonousb.jpg",
+      "tags": [
+        "work"
+      ],
+      "description": "Micrófono USB para grabaciones de alta calidad."
+    },
+    {
+      "id": 33,
+      "userId": 4,
+      "name": "Máquina para Hacer Pan Casero",
+      "sellOrSearch": true,
+      "price": 79.99,
+      "image": "images/pancasero.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Máquina para hacer pan casero y disfrutar de pan recién horneado."
+    },
+    {
+      "id": 34,
+      "userId": 2,
+      "name": "Afeitadora Eléctrica de Precisión",
+      "sellOrSearch": false,
+      "price": 59.99,
+      "image": "images/afeitadora.jpg",
+      "tags": [
+        "lifestyle",
+        "mobile"
+      ],
+      "description": "Afeitadora eléctrica de precisión para un afeitado cómodo y preciso."
+    },
+    {
+      "id": 35,
+      "userId": 1,
+      "name": "Robot Aspirador Inteligente",
+      "sellOrSearch": false,
+      "price": 199.99,
+      "image": "images/robotaspirador.jpg",
+      "tags": [
+        "lifestyle",
+        "work"
+      ],
+      "description": "Robot aspirador inteligente para mantener tu hogar limpio sin esfuerzo."
+    },
+    {
+      "id": 36,
+      "userId": 5,
+      "name": "Monitor de Juegos de Alta Frecuencia",
+      "sellOrSearch": true,
+      "price": 399.99,
+      "image": "images/monitorjuegos.jpg",
+      "tags": [
+        "lifestyle",
+        "work"
+      ],
+      "description": "Monitor de juegos de alta frecuencia para una experiencia de juego fluida."
+    },
+    {
+      "id": 37,
+      "userId": 3,
+      "name": "Set de Herramientas para Barbacoa",
+      "sellOrSearch": true,
+      "price": 29.99,
+      "image": "images/herramientasbarbacoa.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Set de herramientas para barbacoa para disfrutar de parrilladas deliciosas."
+    },
+    {
+      "id": 38,
+      "userId": 4,
+      "name": "Kit de Pintura para Artistas",
+      "sellOrSearch": true,
+      "price": 49.99,
+      "image": "images/kitpintura.jpg",
+      "tags": [
+        "work",
+        "lifestyle"
+      ],
+      "description": "Kit de pintura para artistas y amantes del arte."
+    },
+    {
+      "id": 39,
+      "userId": 1,
+      "name": "Sistema de Sonido Envolvente para Cine en Casa",
+      "sellOrSearch": true,
+      "price": 299.99,
+      "image": "images/sonidosurround.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Sistema de sonido envolvente para disfrutar de películas en casa como nunca antes."
+    },
+    {
+      "id": 40,
+      "userId": 5,
+      "name": "Cafetera de Goteo Programable",
+      "sellOrSearch": false,
+      "price": 49.99,
+      "image": "images/cafeteragoteo.jpg",
+      "tags": [
+        "lifestyle"
+      ],
+      "description": "Cafetera de goteo programable para tener café listo cuando lo desees."
+    },
+    {
+      "userId": 1,
+      "name": "sdfsf",
+      "sellOrSearch": "on",
+      "price": "53",
+      "image": "https://flutterflow.io/images/codeView_FlutterFlow-p-1600.png",
+      "tags": [],
+      "description": "sfdsfsfdsf",
+      "updatedAt": "2023-10-29T11:38:30.591Z",
+      "id": 41
+    },
+    {
+      "userId": 1,
+      "name": "rtertert",
+      "sellOrSearch": false,
+      "price": "56",
+      "image": "",
+      "tags": [],
+      "description": "tertstsert",
+      "updatedAt": "2023-10-29T11:55:48.775Z",
+      "id": 42
+    },
+    {
+      "userId": 1,
+      "name": "fsdfsfsdffsdsdf",
+      "sellOrSearch": true,
+      "price": "45",
+      "image": "",
+      "tags": [],
+      "description": "sdfsdfsdf fsdf sdfsf sfsdfs",
+      "updatedAt": "2023-10-29T19:02:24.161Z",
+      "id": 43
+    },
+    {
+      "userId": 1,
+      "name": "bcbcbcvb",
+      "sellOrSearch": false,
+      "price": "3",
+      "image": "",
+      "tags": [],
+      "description": "xbxzbvxbxzcgzvcvc",
+      "updatedAt": "2023-10-29T19:16:14.245Z",
+      "id": 44
+    },
+    {
+      "userId": 1,
+      "name": "fgdfgdfg",
+      "sellOrSearch": false,
+      "price": "4",
+      "image": "",
+      "tags": [],
+      "description": "gdfgdfg",
+      "updatedAt": "2023-10-29T19:19:38.573Z",
+      "id": 45
+    }
+  ]
+}
