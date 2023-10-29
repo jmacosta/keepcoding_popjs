@@ -1,4 +1,6 @@
+import { dispatchEvent } from '../utils/dispatchEvents.js';
 import { createUser } from './registerModel.js';
+
 export const registerController = registerForm => {
   registerForm.addEventListener('submit', event => {
     event.preventDefault();
@@ -10,12 +12,14 @@ export const registerController = registerForm => {
     }
   });
 };
-
+// to do check the use of event parameter
 const validateForm = async (event, registerForm) => {
   const dataForm = new FormData(registerForm);
   try {
     if (isFormValid(dataForm)) {
+      dispatchEvent('startCreateUser', null, registerForm);
       await createUser(dataForm.get('email'), dataForm.get('password'));
+      dispatchEvent('finishCreateUser', null, registerForm);
       alert('Usuario creado que te cagas Manolito');
       window.location = './login.html';
     }
