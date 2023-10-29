@@ -1,17 +1,20 @@
 import { dispatchEvent } from '../utils/dispatchEvents.js';
-import { getProducts } from './productListModel.js';
 import { productView } from './productListView.js';
 export const productListController = async productList => {
   try {
     dispatchEvent('startLoadingProducts', null, productList);
     const products = await getProducts();
 
-    productList.innerHTML = buildProductList(products).join('');
-    dispatchEvent(
-      'productsLoaded',
-      { type: 'success', message: 'productos cargados correctamente' },
-      productList
-    );
+    if (products.length > 0) {
+      productList.innerHTML = buildProductList(products).join('');
+      dispatchEvent(
+        'productsLoaded',
+        { type: 'success', message: 'productos cargados correctamente' },
+        productList
+      );
+    } else {
+      productList.innerHTML = `<h1>No hay productos que mostrar</h1>`;
+    }
   } catch (error) {
     dispatchEvent(
       'error',
