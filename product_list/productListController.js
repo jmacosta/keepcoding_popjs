@@ -1,8 +1,11 @@
 import { getProducts } from './productListModel.js';
 import { productView } from './productListView.js';
-export const productListController = async productList => {
-  const products = await getProducts();
 
+import { dispatchEvent } from '../utils/dispatchEvents.js';
+export const productListController = async productList => {
+  dispatchEvent('startLoadingProducts', null, productList);
+  const products = await getProducts();
+  dispatchEvent('finishLoadingProducts', null, productList);
   productList.innerHTML = buildProductList(products).join('');
 };
 
