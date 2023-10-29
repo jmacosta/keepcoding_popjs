@@ -1,4 +1,5 @@
 import { dispatchEvent } from '../utils/dispatchEvents.js';
+import { getProducts } from './productListModel.js';
 import { productView } from './productListView.js';
 export const productListController = async productList => {
   try {
