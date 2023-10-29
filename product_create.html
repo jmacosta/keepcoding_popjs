@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popjs - Regístrate o inicia sesión</title>
+    <title>Popjs - Nuevo producto</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/product_create.css" />
@@ -17,7 +17,11 @@
           <div class="modal">
             <div class="modal__header">
               <span class="modal__title">Nuevo producto</span
-              ><button class="button button--icon" id="close-button">
+              ><button
+                class="button button--icon"
+                id="closeButton"
+                formnovalidate
+              >
                 <svg
                   width="24"
                   viewBox="0 0 24 24"
@@ -34,11 +38,14 @@
             <div class="modal__body">
               <!-- Name of Product -->
               <div class="input">
-                <label class="input__label">Nombre</label>
+                <label class="input__label" for="name">Nombre</label>
                 <input
+                  id="name"
                   class="input__field"
                   type="text"
+                  name="name"
                   required
+                  autocomplete="off"
                   title="Por favor rellena este campo"
                 />
                 <p class="input__description">
@@ -47,10 +54,14 @@
               </div>
               <!-- Description of Product -->
               <div class="input">
-                <label class="input__label">Descripción</label>
+                <label class="input__label" for="description"
+                  >Descripción</label
+                >
                 <textarea
                   class="input__field input__field--textarea"
                   required
+                  name="description"
+                  id="description"
                 ></textarea>
                 <p class="input__description">
                   Escribe una buena descripción de tu producto para que los
@@ -62,16 +73,28 @@
 
               <!-- Image of product -->
               <div class="input">
-                <label class="input__label">Imagen</label>
-                <input class="input__field" type="url" />
+                <label class="input__label" for="image">Imagen</label>
+                <input
+                  class="input__field"
+                  type="url"
+                  name="image"
+                  id="image"
+                />
                 <p class="input__description">
                   Introduce una url válida con la foto de tu producto
                 </p>
               </div>
               <!-- Price of Product -->
               <div class="input">
-                <label class="input__label">Precio</label>
-                <input class="input__field" type="number" min="0" required />
+                <label class="input__label" for="price">Precio</label>
+                <input
+                  class="input__field"
+                  type="number"
+                  min="0"
+                  required
+                  name="price"
+                  id="price"
+                />
                 <p class="input__description">
                   Precio en € de venta / compra máximo para tu producto
                 </p>
@@ -81,11 +104,12 @@
               <div class="radio-tile-group">
                 <div class="input-container">
                   <input
-                    id="Sell"
+                    id="sell"
                     class="radio-button"
                     type="radio"
-                    name="radio"
+                    name="sellOrSearch"
                     required
+                    value="true"
                   />
                   <div class="radio-tile">
                     <div class="icon sell-icon">
@@ -136,8 +160,9 @@
                     id="search"
                     class="radio-button"
                     type="radio"
-                    name="radio"
+                    name="sellOrSearch"
                     required
+                    value="false"
                   />
                   <div class="radio-tile">
                     <div class="icon search-icon">
@@ -169,7 +194,9 @@
               </div>
             </div>
             <div class="modal__footer">
-              <button class="button button--primary">Crear producto</button>
+              <button class="button button--primary" id="productCreateButton">
+                Crear producto
+              </button>
             </div>
           </div>
         </div>
